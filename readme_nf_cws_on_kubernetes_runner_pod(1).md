@@ -1,4 +1,4 @@
-# nf-cws on Kubernetes — Simple Step-by-Step (Runner Pod approach)
+# nf-cws on Kubernetes - Runner Pod approach
 
 This guide shows the **minimal working setup** to run **Nextflow** with the **nf-cws** plugin on **Kubernetes** using a **single runner pod** and a **PVC** for work data. The plugin will **auto-create the CWS scheduler** in your cluster (**no manual service** needed).
 
