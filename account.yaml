@@ -1,0 +1,34 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: cwsaccount
+  namespace: yagmur  
+
+---
+
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: cwsrole
+rules:
+ - apiGroups: [""]
+   resources: ["pods","pods/status","pods/exec","nodes","bindings","configmaps"]
+   verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
+ - apiGroups: ["metrics.k8s.io"]
+   resources: ["nodes"]
+   verbs: ["get","list"]
+
+---
+
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+   name: cwsbinding
+subjects:
+ - kind: ServiceAccount
+   name: cwsaccount
+   namespace: yagmur 
+roleRef:
+   kind: ClusterRole
+   name: cwsrole
+   apiGroup: rbac.authorization.k8s.io

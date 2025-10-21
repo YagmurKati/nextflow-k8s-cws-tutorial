@@ -1,0 +1,26 @@
+# api-exp-input
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: api-exp-input
+  namespace: yagmur
+spec:
+  accessModes: ["ReadWriteMany"]
+  storageClassName: cephfs
+  resources:
+    requests:
+      storage: 1Gi
+---
+# api-exp-data
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: api-exp-data
+  namespace: yagmur
+spec:
+  accessModes: ["ReadWriteMany"]
+  storageClassName: cephfs
+  resources:
+    requests:
+      storage: 5Gi
+
