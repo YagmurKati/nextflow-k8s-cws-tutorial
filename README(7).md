@@ -41,13 +41,13 @@ nextflow.config    # Nextflow config (uses cws { dns = ... } to reach the Servic
 
 ---
 
-## Quick start (5–10 minutes)
+## Quick start
 
 ### 0) Get the repo ready
 Pick a clean directory for testing and **download/clone this repository** there:
 ```bash
 # Example (replace with your repo URL if needed)
-git clone <YOUR_REPO_URL> nf-cws-k8s-scheduler-runner
+git clone https://github.com/YagmurKati/nextflow-k8s-cws-tutorial nf-cws-k8s-scheduler-runner
 cd nf-cws-k8s-scheduler-runner
 ```
 
