@@ -43,6 +43,13 @@ nextflow.config    # Nextflow config (points to the scheduler service)
 
 ## Quick start
 
+Note:
+Replace every occurrence of yagmur in the YAML files and in the commands below with your own namespace.
+You can create your namespace first if it doesn’t exist yet:
+```bash
+kubectl create namespace my-namespace
+```
+
 ### 0) Get the repo ready
 Pick a clean directory for testing and **download/clone this repository** there:
 ```bash
