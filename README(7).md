@@ -23,7 +23,7 @@ cws.yaml           # CWS scheduler Pod (name: workflow-scheduler)
 cws-service.yaml   # Service exposing the scheduler as cws-scheduler:8080
 nf-runner.yaml     # Nextflow runner Pod (name: nf-runner) with PVC at /workspace
 main.nf            # Your pipeline script
-nextflow.config    # Nextflow config (uses cws { dns = ... } to reach the Service)
+nextflow.config    # Nextflow config (points to the scheduler service)
 ```
 
 ---
