@@ -30,7 +30,7 @@ nextflow.config    # Nextflow config (points to the scheduler service)
 
 ## Prerequisites
 - Kubernetes cluster + `kubectl` configured
-- Namespace: **`yagmur`**
+- Namespace: **`yagmur`**. You need to adapt the namespace in each command and file to your namespace.
 - `ServiceAccount`/RBAC for **`cwsaccount`** (in `account.yaml`)
 - A `PersistentVolumeClaim` named **`nextflow-pvc`** (in `pvc.yaml`)
 - **Nextflow ≥ 24.04.0** available in the runner image (as used by `nf-runner.yaml`)
