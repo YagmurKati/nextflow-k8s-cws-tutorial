@@ -7,11 +7,11 @@ This repository is a **minimal, reproducible walkthrough** for running **Nextflo
 
 ```
 Nextflow (runner pod)  --->  cws-scheduler Service  --->  workflow-scheduler Pod
-           \--> task pods (scheduled by CWS) in namespace: yagmur
+           \--> task pods (scheduled by CWS)
 ```
 
 > This README focuses on **how to run** the setup step-by-step.  
-> All manifests and pipeline files are already in the repo—**no need to paste their full contents here**.
+> Adapt the namespace "yagmur" to your namespace.
 
 ---
 
